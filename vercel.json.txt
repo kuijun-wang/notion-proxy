@@ -1,0 +1,32 @@
+{
+  "version": 3,
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "https://www.notion.so/:id*"
+    },
+    {
+      "source": "/:path*",
+      "destination": "https://www.notion.so/:path*"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/:path*",
+      "headers": [
+        {
+          "key": "Host",
+          "value": "www.notion.so"
+        },
+        {
+          "key": "Referer",
+          "value": "https://www.notion.so/"
+        },
+        {
+          "key": "Origin",
+          "value": "https://www.notion.so"
+        }
+      ]
+    }
+  ]
+}
