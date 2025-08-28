@@ -1,32 +1,20 @@
 {
-  "version": 3,
-  "rewrites": [
+  "version": 2,
+  "builds": [
     {
-      "source": "/",
-      "destination": "https://www.notion.so/:id*"
-    },
-    {
-      "source": "/:path*",
-      "destination": "https://www.notion.so/:path*"
+      "src": "**/*.js",
+      "use": "@vercel/static"
     }
   ],
-  "headers": [
+  "routes": [
     {
-      "source": "/:path*",
-      "headers": [
-        {
-          "key": "Host",
-          "value": "www.notion.so"
-        },
-        {
-          "key": "Referer",
-          "value": "https://www.notion.so/"
-        },
-        {
-          "key": "Origin",
-          "value": "https://www.notion.so"
-        }
-      ]
+      "src": "/(.*)",
+      "dest": "https://www.notion.so/$1",
+      "headers": {
+        "Host": "www.notion.so",
+        "Referer": "https://www.notion.so/",
+        "Origin": "https://www.notion.so"
+      }
     }
   ]
 }
