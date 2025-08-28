@@ -8,6 +8,15 @@
   ],
   "routes": [
     {
+      "src": "/",
+      "dest": "https://www.notion.so/caleb0613/25de9d2adb3181e88ce8e7096e7c511b",
+      "headers": {
+        "Host": "www.notion.so",
+        "Referer": "https://www.notion.so/",
+        "Origin": "https://www.notion.so"
+      }
+    },
+    {
       "src": "/(.*)",
       "dest": "https://www.notion.so/$1",
       "headers": {
