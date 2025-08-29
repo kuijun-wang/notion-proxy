@@ -9,7 +9,7 @@
   "routes": [
     {
       "src": "/",
-      "dest": "https://caleb0613.notion.site/?v=25de9d2adb3181ffb692000cea0a64ac",
+      "dest": "https://caleb0613.notion.site/",
       "headers": {
         "Host": "caleb0613.notion.site",
         "Referer": "https://caleb0613.notion.site/",
@@ -27,3 +27,4 @@
     }
   ]
 }
+
