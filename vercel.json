@@ -9,20 +9,20 @@
   "routes": [
     {
       "src": "/",
-      "dest": "https://www.notion.so/caleb0613/25de9d2adb3181e88ce8e7096e7c511b",
+      "dest": "https://caleb0613.notion.site/?v=25de9d2adb3181ffb692000cea0a64ac",
       "headers": {
-        "Host": "www.notion.so",
-        "Referer": "https://www.notion.so/",
-        "Origin": "https://www.notion.so"
+        "Host": "caleb0613.notion.site",
+        "Referer": "https://caleb0613.notion.site/",
+        "Origin": "https://caleb0613.notion.site"
       }
     },
     {
       "src": "/(.*)",
-      "dest": "https://www.notion.so/$1",
+      "dest": "https://caleb0613.notion.site/$1",
       "headers": {
-        "Host": "www.notion.so",
-        "Referer": "https://www.notion.so/",
-        "Origin": "https://www.notion.so"
+        "Host": "caleb0613.notion.site",
+        "Referer": "https://caleb0613.notion.site/",
+        "Origin": "https://caleb0613.notion.site"
       }
     }
   ]
